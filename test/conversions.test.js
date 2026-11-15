@@ -13,3 +13,7 @@ test('converte metri in centimetri', () => {
 test('rifiuta unità sconosciute', () => {
   assert.throws(() => convert(1, 'mm', 'parsec'), /non supportata/);
 });
+
+test('converte libbre-piede in newton metro', () => {
+  assert.equal(convert(10, 'lbf-ft', 'Nm'), 13.558);
+});

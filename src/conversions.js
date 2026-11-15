@@ -6,6 +6,9 @@ export const UNITS = {
   m: { quantity: 'lunghezza', factor: 1000 },
   in: { quantity: 'lunghezza', factor: 25.4 },
   ft: { quantity: 'lunghezza', factor: 304.8 },
+  Nm: { quantity: 'coppia', factor: 1 },
+  'lbf-ft': { quantity: 'coppia', factor: 1.3558179 },
+  'lbf-in': { quantity: 'coppia', factor: 0.1129848 },
 };
 
 const DECIMALS = 3;
