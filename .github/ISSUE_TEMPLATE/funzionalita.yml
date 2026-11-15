@@ -1,0 +1,21 @@
+name: Nuova funzionalità
+description: Proponi una nuova funzionalità
+title: 'feat: '
+labels: ['enhancement']
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema da risolvere
+      description: Cosa serve e a chi
+    validations:
+      required: true
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Soluzione proposta
+  - type: textarea
+    id: criteri
+    attributes:
+      label: Criteri di accettazione
+      placeholder: '- [ ] ...'

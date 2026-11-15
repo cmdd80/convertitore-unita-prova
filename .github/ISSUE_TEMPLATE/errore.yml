@@ -1,0 +1,29 @@
+name: Segnalazione di errore
+description: Qualcosa non funziona come previsto
+title: 'fix: '
+labels: ['bug']
+body:
+  - type: textarea
+    id: passi
+    attributes:
+      label: Come riprodurlo
+      placeholder: '1. Chiama /convert?value=10&from=mm&to=in'
+    validations:
+      required: true
+  - type: textarea
+    id: atteso
+    attributes:
+      label: Risultato atteso
+    validations:
+      required: true
+  - type: textarea
+    id: ottenuto
+    attributes:
+      label: Risultato ottenuto
+    validations:
+      required: true
+  - type: input
+    id: versione
+    attributes:
+      label: Versione
+      placeholder: '1.0.0'
