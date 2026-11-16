@@ -14,6 +14,10 @@ test('rifiuta unità sconosciute', () => {
   assert.throws(() => convert(1, 'mm', 'parsec'), /non supportata/);
 });
 
+test('converte libbre-piede in newton metro', () => {
+  assert.equal(convert(10, 'lbf-ft', 'Nm'), 13.558);
+});
+
 test('converte megapascal in bar', () => {
   assert.equal(convert(2, 'MPa', 'bar'), 20);
 });
