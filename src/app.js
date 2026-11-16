@@ -16,7 +16,7 @@ app.get('/convert', (req, res) => {
   }
 
   try {
-    res.json(convert(value, from, to));
+    res.json({ value: convert(value, from, to), unit: to });
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
