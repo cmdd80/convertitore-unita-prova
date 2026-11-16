@@ -25,3 +25,7 @@ test('converte megapascal in bar', () => {
 test('rifiuta grandezze diverse', () => {
   assert.throws(() => convert(1, 'bar', 'mm'), /Impossibile convertire/);
 });
+
+test('arrotonda al millesimo più vicino', () => {
+  assert.equal(convert(10, 'mm', 'in'), 0.394);
+});

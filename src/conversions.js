@@ -32,5 +32,5 @@ export function convert(value, from, to) {
 
 function round(n) {
   const scale = 10 ** DECIMALS;
-  return Math.trunc(n * scale) / scale;
+  return Math.round(n * scale) / scale;
 }
