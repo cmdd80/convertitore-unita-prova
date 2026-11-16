@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://github.com/cmdd80/convertitore-unita-prova/compare/v1.1.0...v2.0.0) (2026-11-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* restituisce valore e unità nella risposta di /convert ([#17](https://github.com/cmdd80/convertitore-unita-prova/issues/17))
+
+### Features
+
+* restituisce valore e unità nella risposta di /convert ([#17](https://github.com/cmdd80/convertitore-unita-prova/issues/17)) ([9dee904](https://github.com/cmdd80/convertitore-unita-prova/commit/9dee90485ca207ed9cbd386d0851aa3778d759b8))
+
+
+### Bug Fixes
+
+* arrotonda al millesimo più vicino ([#15](https://github.com/cmdd80/convertitore-unita-prova/issues/15)) ([27f8ebc](https://github.com/cmdd80/convertitore-unita-prova/commit/27f8ebc22e1b76e19ce072b27db63db534f44f48))
+
 ## [1.1.0](https://github.com/cmdd80/convertitore-unita-prova/compare/v1.0.0...v1.1.0) (2026-11-16)
 
 
