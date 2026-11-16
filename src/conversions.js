@@ -6,6 +6,10 @@ export const UNITS = {
   m: { quantity: 'lunghezza', factor: 1000 },
   in: { quantity: 'lunghezza', factor: 25.4 },
   ft: { quantity: 'lunghezza', factor: 304.8 },
+  kPa: { quantity: 'pressione', factor: 1 },
+  MPa: { quantity: 'pressione', factor: 1000 },
+  bar: { quantity: 'pressione', factor: 100 },
+  psi: { quantity: 'pressione', factor: 6.894757 },
 };
 
 const DECIMALS = 3;
