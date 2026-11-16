@@ -1,5 +1,6 @@
 // Ogni unità indica la grandezza a cui appartiene e il fattore
 // per passare all'unità base della grandezza (per le lunghezze: mm).
+// Le unità di temperatura usano toBase/fromBase perché la conversione non è lineare.
 export const UNITS = {
   mm: { quantity: 'lunghezza', factor: 1 },
   cm: { quantity: 'lunghezza', factor: 10 },
@@ -13,6 +14,21 @@ export const UNITS = {
   MPa: { quantity: 'pressione', factor: 1000 },
   bar: { quantity: 'pressione', factor: 100 },
   psi: { quantity: 'pressione', factor: 6.894757 },
+  C: {
+    quantity: 'temperatura',
+    toBase: (v) => v + 273.15,
+    fromBase: (v) => v - 273.15,
+  },
+  F: {
+    quantity: 'temperatura',
+    toBase: (v) => (v - 32) * (5 / 9) + 273.15,
+    fromBase: (v) => (v - 273.15) * (9 / 5) + 32,
+  },
+  K: {
+    quantity: 'temperatura',
+    toBase: (v) => v,
+    fromBase: (v) => v,
+  },
 };
 
 const DECIMALS = 3;
@@ -27,7 +43,9 @@ export function convert(value, from, to) {
     throw new Error(`Impossibile convertire ${from} in ${to}`);
   }
 
-  return round((value * source.factor) / target.factor);
+  const base = source.toBase ? source.toBase(value) : value * source.factor;
+  const result = target.fromBase ? target.fromBase(base) : base / target.factor;
+  return round(result);
 }
 
 function round(n) {
