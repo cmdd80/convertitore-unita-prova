@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/cmdd80/convertitore-unita-prova/compare/v2.0.0...v2.0.1) (2026-11-16)
+
+
+### Bug Fixes
+
+* **deps:** bump express from 5.2.1 to 5.3.0 ([#19](https://github.com/cmdd80/convertitore-unita-prova/issues/19)) ([3e22462](https://github.com/cmdd80/convertitore-unita-prova/commit/3e22462d3f4253d6dd8cb81e6cec34e1ca83848a))
+
 ## [2.0.0](https://github.com/cmdd80/convertitore-unita-prova/compare/v1.1.0...v2.0.0) (2026-11-16)
 
 
