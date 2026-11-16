@@ -13,3 +13,11 @@ test('converte metri in centimetri', () => {
 test('rifiuta unità sconosciute', () => {
   assert.throws(() => convert(1, 'mm', 'parsec'), /non supportata/);
 });
+
+test('converte megapascal in bar', () => {
+  assert.equal(convert(2, 'MPa', 'bar'), 20);
+});
+
+test('rifiuta grandezze diverse', () => {
+  assert.throws(() => convert(1, 'bar', 'mm'), /Impossibile convertire/);
+});
