@@ -1,0 +1,4 @@
+# Ogni modifica richiede la review di almeno uno dei responsabili.
+# Si possono indicare responsabili diversi per cartella, per esempio:
+# /src/  @<collega>
+*  @cmdd80 
