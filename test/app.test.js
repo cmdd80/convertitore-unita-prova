@@ -23,7 +23,7 @@ test('GET /health risponde ok', async () => {
 test('GET /convert restituisce il valore convertito', async () => {
   const res = await fetch(`${baseUrl}/convert?value=1&from=in&to=mm`);
   assert.equal(res.status, 200);
-  assert.equal(await res.json(), 25.4);
+  assert.deepEqual(await res.json(), { value: 25.4, unit: 'mm' });
 });
 
 test('GET /convert rifiuta un valore non numerico', async () => {
