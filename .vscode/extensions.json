@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "vivaxy.vscode-conventional-commits",
+    "mhutchie.git-graph",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "EditorConfig.EditorConfig"
+  ]
+}
