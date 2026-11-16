@@ -9,6 +9,10 @@ export const UNITS = {
   Nm: { quantity: 'coppia', factor: 1 },
   'lbf-ft': { quantity: 'coppia', factor: 1.3558179 },
   'lbf-in': { quantity: 'coppia', factor: 0.1129848 },
+  kPa: { quantity: 'pressione', factor: 1 },
+  MPa: { quantity: 'pressione', factor: 1000 },
+  bar: { quantity: 'pressione', factor: 100 },
+  psi: { quantity: 'pressione', factor: 6.894757 },
 };
 
 const DECIMALS = 3;
