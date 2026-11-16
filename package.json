@@ -1,6 +1,6 @@
 {
   "name": "convertitore-unita",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "description": "API di conversione delle unità di misura",
   "type": "module",
